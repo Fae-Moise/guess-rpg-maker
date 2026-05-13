@@ -5,6 +5,31 @@
     # enjoy and hopefully you can win this game!
     # print_dramatic_test (' ...)
 
-if __name__ == '___main___':
+import random
+
+if __name__ == '__main__':
+    question = [
+        'This JRPG combines turn-based action with life sim elements and an award-winning acid jazz soundtrack.',
+        ''
+    ]
+    
+    answer = [
+        'persona 5',
+        ''
+    ]
+
+
     print('Welcome to guess that RPG maker!')
-    print('You will be guessing rpgs from 2000s and up to date.')
+    print('You will be guessing rpgs from 2000s and present day.')
+    question = [    
+        'This JRPG combines turn-based action with life sim elements and an award-winning acid jazz soundtrack.',
+        ''
+    ]
+    answer = 'Kingdom Hearts',
+    
+    
+else:
+    answer =  'Twister Wonderland',
+    ''
+    
+    print('Incorrect. ')
