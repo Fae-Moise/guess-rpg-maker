@@ -8,28 +8,24 @@
 import random
 
 if __name__ == '__main__':
-    question = [
-        'This JRPG combines turn-based action with life sim elements and an award-winning acid jazz soundtrack.',
-        ''
-    ]
+    questions = (
+        "This JRPG combines turn-based action with life sim elements and an award-winning acid jazz soundtrack. What is it?: ", 
+        " This character wields a keyblade and is known for disney collaboration. What game is this?: "
+        " This game is known for capturing cute pocket monsters and famous battle ost. What game is this?: "
+        ""
+    )
     
-    answer = [
-        'persona 5',
-        ''
-    ]
+    answer = (
+        "persona 5",
+        "Kingdom Hearts" ,
+        "Pokemon ", )
 
 
     print('Welcome to guess that RPG maker!')
     print('You will be guessing rpgs from 2000s and present day.')
-    question = [    
-        'This JRPG combines turn-based action with life sim elements and an award-winning acid jazz soundtrack.',
-        ''
-    ]
-    answer = 'Kingdom Hearts',
+    for question in questions: 
+        print("---------------------")
+        print(question)
+  
     
     
-else:
-    answer =  'Twister Wonderland',
-    ''
-    
-    print('Incorrect. ')
