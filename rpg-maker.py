@@ -15,14 +15,14 @@ if __name__ == '__main__':
         "4. What game in Nintendo orignated in Japan with this main page mascot is a blue hedgehog? " , )
     
 
-    options = (("A. persona 5", "B.Fire Emblem: 3 Houses" , "C.Tokyo Xanadu" ),
-        ("A.Final Fantasy" "B. Kingdom Hearts" , "C. Twisted Wonderland"),
-        ("A. Monster Hunter ", "B. Dragon Quest", "C.Pokemon" ),
-        ("A. Sonic the Hedgehog" , "B. Kirby" , "C. Hatsune Miku "))
+    options = (("A. persona 5.", "B.Fire Emblem: 3 Houses." , "C.Tokyo Xanadu." ),
+        ("A.Final Fantasy." "B. Kingdom Hearts." , "C. Twisted Wonderland."),
+        ("A. Monster Hunter.", "B. Dragon Quest.", "C.Pokemon." ),
+        ("A. Sonic the Hedgehog." , "B. Kirby." , "C. Hatsune Miku."))
 
 
 
-    answers = ("C," "B," "A, " )
+    answers = ("A," "B," "C",  "A")
 
     guesses = []
 
@@ -41,7 +41,7 @@ if __name__ == '__main__':
         guess = input("Enter (A, B, C ): ").upper()
         guesses.append(guess)
         if guess == answers[question_num]:
-            score += 1
+            
             print("Correct !")
         else:
             print("Incorrect.")
