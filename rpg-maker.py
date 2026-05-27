@@ -8,24 +8,42 @@
 import random
 
 if __name__ == '__main__':
-    questions = (
-        "This JRPG combines turn-based action with life sim elements and an award-winning acid jazz soundtrack. What is it?: ", 
-        " This character wields a keyblade and is known for disney collaboration. What game is this?: "
-        " This game is known for capturing cute pocket monsters and famous battle ost. What game is this?: "
-        ""
-    )
+
+    questions = ("1. This JRPG combines turn-based action with life sim elements and an award-winning acid jazz soundtrack. What is it? ", 
+        "2. This character wields a keyblade and is known for disney collaboration. What game is this?" ,
+        "3. This game is known for capturing cute pocket monsters and famous battle ost. What game is this? " ,
+        "4. What game in Nintendo orignated in Japan with this main page mascot is a blue hedgehog? " , )
     
-    answer = (
-        "persona 5",
-        "Kingdom Hearts" ,
-        "Pokemon ", )
+
+    options = (("A. persona 5", "B.Fire Emblem: 3 Houses" , "C.Tokyo Xanadu" ),
+        ("A.Final Fantasy" "B. Kingdom Hearts" , "C. Twisted Wonderland"),
+        ("A. Monster Hunter ", "B. Dragon Quest", "C.Pokemon" ),
+        ("A. Sonic the Hedgehog" , "B. Kirby" , "C. Hatsune Miku "))
 
 
+
+    answers = ("C," "B," "A, " )
+
+    guesses = []
+
+    question_num = 0
+ 
     print('Welcome to guess that RPG maker!')
     print('You will be guessing rpgs from 2000s and present day.')
+
+
     for question in questions: 
-        print("---------------------")
+        print("---------------")
         print(question)
-  
-    
-    
+    for option in options[question_num]:
+        print(option)
+
+        guess = input("Enter (A, B, C ): ").upper()
+        guesses.append(guess)
+        if guess == answers[question_num]:
+            score += 1
+            print("Correct !")
+        else:
+            print("Incorrect.")
+            print(f"{answers[question_num]} is the correct answer!")
+        question_num += 1
