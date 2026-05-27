@@ -47,3 +47,20 @@ if __name__ == '__main__':
             print("Incorrect.")
             print(f"{answers[question_num]} is the correct answer!")
         question_num += 1
+
+
+
+        print("------------------")
+        print("     RESULTS...      " )
+        print("------------------")
+
+
+        print("answers: ", end ="")
+        for answer in answers:
+            print()
+
+
+            print("guesses:" , end= "")
+            for guess in guesses:
+                print(guess, end= '')
+                print ()
