@@ -16,13 +16,13 @@ if __name__ == '__main__':
     
 
     options = (("A. persona 5.", "B.Fire Emblem: 3 Houses." , "C.Tokyo Xanadu." ),
-        ("A.Final Fantasy." "B. Kingdom Hearts." , "C. Twisted Wonderland."),
+        ("A.Final Fantasy.", "B. Kingdom Hearts." , "C. Twisted Wonderland."),
         ("A. Monster Hunter.", "B. Dragon Quest.", "C.Pokemon." ),
         ("A. Sonic the Hedgehog." , "B. Kirby." , "C. Hatsune Miku."))
 
 
 
-    answers = ("A," "B," "C",  "A")
+    answers = ("A", "B", "C", "A")
 
     guesses = []
 
@@ -35,8 +35,8 @@ if __name__ == '__main__':
     for question in questions: 
         print("---------------")
         print(question)
-    for option in options[question_num]:
-        print(option)
+        for option in options[question_num]:
+            print(option)
 
         guess = input("Enter (A, B, C ): ").upper()
         guesses.append(guess)
@@ -50,17 +50,17 @@ if __name__ == '__main__':
 
 
 
-        print("------------------")
-        print("     RESULTS...      " )
-        print("------------------")
+    print("------------------")
+    print("     RESULTS...      " )
+    print("------------------")
 
 
-        print("answers: ", end ="")
-        for answer in answers:
-            print()
+    print("answers: ", end ="")
+    for answer in answers:
+        print()
 
 
-            print("guesses:" , end= "")
-            for guess in guesses:
-                print(guess, end= '')
-                print ()
+        print("guesses:" , end= "")
+        for guess in guesses:
+            print(guess, end= '')
+            print ()
